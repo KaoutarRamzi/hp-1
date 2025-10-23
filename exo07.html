@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>formulaire</title>
+</head>
+
+<body>
+    <h1 align="center">Créer un compte:</h1>
+    <form>
+        <legend>
+            <font size=5><i>Identité:</i></font>
+        </legend>
+        <fieldset style="background-color:lightblue;">
+            <label w for="nom">
+                <font size=4>Nom<b></b></font>
+            </label>
+            <input type="text" id="nom" name="nom" placeholder="nom" maxlength="30" required> <br><br>
+
+            <label for="prenom">
+                <font size=4><b>Prénom</b></font>
+            </label>
+            <input type="text" id="prenom" name="prenom" placeholder="Prénom" maxlength="30" required><br><br>
+            <label for="naissance">
+                <font size=4><b>Date de Naissance</b></font>
+            </label>
+            <input type="date" id="naissance" name="naissance" min="1900-01-01" max="2025-10-15" required>
+
+        </fieldset>
+        <legend>
+            <font size=5><i>Contact : </i></font>
+        </legend>
+        <fieldset style="background-color:lightblue;">
+            <label for="tel">
+                <font size=4><b>Télephone</b></font>
+            </label>
+            <input type="tel" id="tel" name="tel" placeholder="_ _ _ _ _ _ _ _ _ _" title="NUMERO MARROCAIN!!" pattern="^0[5-7]\d{8}$"" required><br><br>
+            <label for=" site">
+            <font size=4><b>Site personnel</b></font></label>
+            <input type="url" id="site" name="site" placeholder="https://example.com">
+        </fieldset>
+        <legend>
+            <font size=5><i>Sécurité :</i></font>
+        </legend>
+        <fieldset style="background-color:lightblue;">
+
+
+            <label for="mdp">
+                <font size=4><b>Mot de passe</b></font>
+            </label>
+            <input type="password" id="mdp" name="mdp" placeholder="mot de passe" minlength="8" required><br><br>
+            <label for="confirm">
+                <font size=4><b>Confirmation</b></font>
+            </label>
+            <input type="password" id="confirm" name="confirm" placeholder="mot de passe" minlength="8" required>
+        </fieldset>
+        <legend>
+            <font size=5><i>Préference : </i></font>
+        </legend>
+        <fieldset style="background-color:lightblue;">
+
+            <label>
+                <input type="checkbox" name="newsletter">
+                <font size=4><b>Recevoir la newsletter</b></font>
+            </label>
+            <p>
+                <font size=4><b>Rôle : </b></font>
+            </p>
+            <label><input type="radio" name="role" value="etudiant" required>
+                <font size=4><b>Etudiant</b></font>
+            </label><br><br>
+            <label><input type="radio" name="role" value="professionnel" required>
+                <font size=4><b>Professionnel</b></font>
+            </label>
+        </fieldset>
+        <button type="submit" class="bnt">
+            <font size=4><b>Créer mon compte</b></font>
+        </button>
+</body>
+
+</html>

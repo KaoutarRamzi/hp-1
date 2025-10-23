@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>html</title>
+</head>
+
+<body>
+
+    <h1>Contactez nous</h1>
+    <form method="post" action="/submit">
+        <fieldset>
+            <label for="nom">
+                <font size=4>Nom :</font>
+            </label>
+            <input type="text" id="nom" name="nom" placeholder="votre nom"><br><br>
+            <label for="email">
+                <font size=4>Email :</font>
+            </label>
+            <input type="text" id="email" name="email" required placeholder="votre email"><br><br>
+            <label for="sujet">
+                <font size=4>Sujet :</font>
+            </label>
+            <input type="text" id="sujet" name="sujet" required placeholder="texte" maxlength="60"><br><br>
+            <lebel for="message">
+                <font size=4>Message :</font><br>
+            </lebel>
+            <textarea id="message" placeholder="min 50 caractères conseillé" maxlength="50" required></textarea><br><br>
+            <button type="submit">Envoyer</button>
+        </fieldset>
+    </form>
+
+</body>
+
+</html>
